@@ -6,13 +6,340 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+
+        android:id="@+id/Show"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="70dp"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+
+        android:id="@+id/B0"
+
+        android:layout_width="238dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Show"
+
+        android:onClick="btn0Clicked"
+        android:text="0"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <Button
+
+        android:id="@+id/B7"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Show"
+
+        android:onClick="btn7Clicked"
+
+        android:text="7"
+
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="371dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+
+    <Button
+
+        android:id="@+id/B8"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Show"
+
+        android:layout_toRightOf="@id/B7"
+
+        android:onClick="btn8Clicked"
+
+        android:text="8"
+
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="371dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/B9"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Show"
+
+        android:layout_toRightOf="@id/B8"
+
+        android:onClick="btn9Clicked"
+
+        android:text="9"
+
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="371dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/Clear"
+
+        android:layout_width="141dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Show"
+
+        android:layout_toRightOf="@id/B9"
+
+        android:onClick="btnclearClicked"
+
+        android:text="C"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="105dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/B4"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B7"
+
+        android:onClick="btn4Clicked"
+
+        android:text="4"
+
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/B5"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B8"
+
+        android:layout_toRightOf="@id/B4"
+
+        android:onClick="btn5Clicked"
+
+        android:text="5"
+
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/B6"
+
+        android:layout_width="72dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B9"
+
+        android:layout_toRightOf="@id/B5"
+
+        android:onClick="btn6Clicked"
+
+        android:text="6"
+
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/Plus"
+
+        android:layout_width="75dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Clear"
+
+        android:layout_toRightOf="@id/B6"
+
+        android:onClick="btnplusClicked"
+
+        android:text="+"
+
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <Button
+
+        android:id="@+id/B1"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B4"
+
+        android:onClick="btn1Clicked"
+
+        android:text="1"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/B2"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B5"
+
+        android:layout_toRightOf="@id/B1"
+
+        android:onClick="btn2Clicked"
+
+        android:text="2"
+
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/B3"
+
+        android:layout_width="70dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B6"
+
+        android:layout_toRightOf="@id/B2"
+
+        android:onClick="btn3Clicked"
+
+        android:text="3"
+
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/Minus"
+
+        android:layout_width="76dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Plus"
+
+        android:layout_toRightOf="@id/B3"
+
+        android:onClick="btnminusClicked"
+
+        android:text="-"
+
+
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+
+    <Button
+
+        android:id="@+id/Equal"
+
+        android:layout_width="75dp"
+
+        android:layout_height="57dp"
+
+        android:layout_below="@id/B1"
+
+        android:layout_toEndOf="@+id/B9"
+        android:onClick="btnequalClicked"
+        android:text="="
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+
+        android:id="@+id/Percent"
+
+        android:layout_width="77dp"
+
+        android:layout_height="59dp"
+
+        android:layout_alignEnd="@+id/Clear"
+
+        android:layout_below="@id/Equal"
+        android:onClick="btnpercentClicked"
+        android:text="%"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+
+        android:id="@+id/Div"
+
+        android:layout_width="75dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/B1"
+
+        android:layout_toRightOf="@id/Equal"
+
+
+        android:onClick="btndivideClicked"
+        android:text="/"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/Multi"
+
+        android:layout_width="76dp"
+
+        android:layout_height="60dp"
+
+        android:layout_below="@id/Minus"
+
+        android:layout_toRightOf="@id/Div"
+
+        android:onClick="btnmultiClicked"
+        android:text="*"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="105dp" />
 
 </android.support.constraint.ConstraintLayout>
